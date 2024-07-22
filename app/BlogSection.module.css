@@ -1,0 +1,117 @@
+/* styles/BlogSection.module.css */
+
+.blog-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.blog-title {
+    font-size: 1.2rem;
+    color: #8b8b8b;
+}
+
+.blog-update {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.blog-post {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-details {
+    padding: 1rem;
+}
+
+.blog-date {
+    color: #8b8b8b;
+    font-size: 0.9rem;
+}
+
+.blog-headline {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.blog-summary {
+    color: #8b8b8b;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.blog-author {
+    color: #8b8b8b;
+    font-size: 0.9rem;
+}
+
+.learn-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .blog-title {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .blog-update {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .blog-post {
+        width: 100%; /* Full width for blog posts */
+        margin: 1rem 0; /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-section {
+        padding: 1rem; /* Further adjust padding for mobile screens */
+    }
+
+    .blog-title {
+        font-size: 0.9rem; /* Further adjust font size */
+    }
+
+    .blog-update {
+        font-size: 1.2rem; /* Further adjust font size */
+    }
+
+    .blog-details {
+        padding: 0.8rem; /* Adjust padding */
+    }
+
+    .blog-date, .blog-headline, .blog-summary, .blog-author {
+        font-size: 0.8rem; /* Adjust font size for smaller elements */
+    }
+
+    .learn-more {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}

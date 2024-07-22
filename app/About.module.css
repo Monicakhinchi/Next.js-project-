@@ -1,0 +1,140 @@
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack content and image vertically by default */
+    align-items: center; /* Center items by default */
+    max-width: 1200px; /* Optional: Set a max-width for better control */
+    width: 100%;
+    gap: 20px; /* Space between content and image */
+}
+
+/* Default layout for larger screens */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Change to row layout on larger screens */
+        justify-content: space-between; /* Space between content and image */
+        align-items: stretch; /* Ensure that both content and image stretch to the same height */
+    }
+}
+
+.about-content {
+    flex: 1; /* Allow content to grow and shrink as needed */
+    max-width: 100%; /* Set a max width for content */
+}
+
+.about-text {
+    width: 100%; /* Ensure full width for text content */
+}
+
+.about-text h2 {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .about-text h2 {
+        font-size: 2em;
+    }
+}
+
+.about-text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .about-text h1 {
+        font-size: 1.8em;
+    }
+}
+
+.about-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .about-text p {
+        font-size: 1em;
+    }
+}
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+}
+
+.column1,
+.column2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Equal width for both columns */
+}
+
+.column1 li,
+.column2 li {
+    font-size: 1em;
+}
+
+.about-text button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-text button:hover {
+    background-color: #0056b3;
+}
+
+.about-image {
+    flex: 1; /* Allow image to grow and shrink as needed */
+    display: flex;
+    align-items: center; /* Center the image vertically within its container */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.about-image img {
+    max-height: 100%; /* Ensure the image scales proportionally */
+    height: auto; /* Allow height to be automatically adjusted */
+    border-radius: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-image img {
+        width: 100%; /* Make image full width */
+        max-width: none; /* Remove max-width restriction */
+        border-radius: 5px;
+    }
+}
+
+/* Adjustments for extra small screens */
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 1.8em;
+    }
+
+    .about-text h1 {
+        font-size: 1.6em;
+    }
+
+    .about-text p {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,30 @@
+/* styles/Partners.module.css */
+
+/* Partners Section */
+.partners {
+    padding: 50px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners-logos img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.partners-logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners-logo img {
+    width: 70px;
+    margin: 0 10px;
+}

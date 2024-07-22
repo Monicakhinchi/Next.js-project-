@@ -1,0 +1,186 @@
+/* styles/ServiceReviews.module.css */
+
+.service-reviews {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-reviews-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+}
+
+.service-reviews h3 {
+  color: #6c63ff;
+  font-size: 1.25rem;
+  margin: 0;
+  text-align: left;
+}
+
+.service-reviews h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0 0 0;
+  text-align: left;
+}
+
+.service-reviews p {
+  color: #6c757d;
+  max-width: 600px;
+  text-align: right;
+  margin: 0; /* Ensure no extra margin */
+  align-self: flex-end; /* Align the paragraph to the right */
+  margin-right: 2rem; /* Consistent right margin */
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center; /* Align items to the start of the container */
+  margin-top: 2rem; /* Add margin for spacing */
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+}
+
+.testimonial-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.testimonial-image img {
+  border-radius: 10px;
+  width: 200px;
+}
+
+.testimonial-content {
+  text-align: left;
+  max-width: 600px;
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+}
+
+.testimonial-content p {
+  margin: 0 2rem 1rem 0; /* Ensure same right margin as .service-reviews p */
+}
+
+.testimonial-info h4 {
+  margin: 0;
+}
+
+.testimonial-info p {
+  margin: 0;
+  color: gray;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .service-reviews {
+      padding: 3rem 1.5rem;
+  }
+
+  .service-reviews-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .service-reviews h2 {
+      font-size: 1.5rem;
+  }
+
+  .service-reviews h3 {
+      font-size: 1rem;
+  }
+
+  .service-reviews p {
+      text-align: center;
+      margin-right: 0;
+  }
+
+  .testimonial {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .testimonial-image img {
+      width: 150px;
+  }
+
+  .testimonial-content {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .testimonial-content p {
+      margin: 0 0 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-reviews {
+      padding: 2rem 1rem;
+  }
+
+  .service-reviews h2 {
+      font-size: 1.25rem;
+  }
+
+  .service-reviews h3 {
+      font-size: 0.9rem;
+  }
+
+  .service-reviews p {
+      max-width: 100%;
+      margin-right: 0;
+  }
+
+  .testimonial {
+      gap: 1rem;
+  }
+
+  .testimonial-image img {
+      width: 120px;
+  }
+
+  .testimonial-content {
+      max-width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-reviews {
+      padding: 1rem;
+  }
+
+  .service-reviews h2 {
+      font-size: 1rem;
+  }
+
+  .service-reviews h3 {
+      font-size: 0.8rem;
+  }
+
+  .service-reviews p {
+      font-size: 0.9rem;
+      max-width: 100%;
+      margin-right: 0;
+  }
+
+  .testimonial {
+      gap: 0.5rem;
+  }
+
+  .testimonial-image img {
+      width: 100px;
+  }
+
+  .testimonial-content {
+      max-width: 100%;
+      text-align: center;
+  }
+}

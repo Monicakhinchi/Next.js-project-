@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.logoWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logoImage {
+    position: relative;
+    height: 60px; /* Adjust the height */
+    width: 60px; /* Adjust the width */
+}
+
+.logo-text {
+    font-size: 1.2em; /* Adjusted font size */
+    color: black; /* Adjusted text color */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px; /* Adjusted gap between navigation links */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black; /* Adjusted text color */
+    font-weight: bold;
+}
+
+.search-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjusted gap */
+}
+
+.searchWrapper {
+    position: relative;
+}
+
+.search-input {
+    padding: 6px 24px 6px 8px; /* Added padding for icon */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 150px; /* Adjusted width */
+}
+
+.searchIcon {
+    position: absolute;
+    right: 8px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: black; /* Ensure this is visible against the input's background */
+    font-size: 16px; /* Adjust size as needed */
+}
+
+.contact-button {
+    background: #4b59f7;
+    color: #fff;
+    border: none;
+    padding: 6px 10px; /* Reduced padding */
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem 0.5rem; /* Adjusted padding */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px; /* Adjusted gap for smaller screens */
+        align-items: center;
+    }
+
+    .search-contact {
+        flex-direction: column;
+        gap: 8px; /* Adjusted gap */
+        margin-top: 1rem;
+    }
+
+    .search-input {
+        width: 100%; /* Full width for search input */
+    }
+
+    .logo-text {
+        font-size: 1em; /* Adjusted font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem; /* Further adjust padding for mobile screens */
+    }
+
+    .nav ul {
+        gap: 10px; /* Further adjusted gap */
+    }
+
+    .search-input {
+        width: 100%; /* Full width for search input */
+    }
+
+    .logo-text {
+        font-size: 0.9em; /* Further adjusted font size */
+    }
+
+    .contact-button {
+        padding: 4px 8px; /* Further reduced padding */
+    }
+}

@@ -1,0 +1,207 @@
+/* styles/PricingPlan.module.css */
+
+.pricing-plan {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-plan .container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.pricing-plan .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-plan .title {
+  text-align: left;
+}
+
+.pricing-plan h3 {
+  color: #6c63ff;
+  font-size: 1.25rem;
+}
+
+.pricing-plan h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.pricing-plan .description {
+  color: #6c757d;
+  max-width: 600px;
+  text-align: right;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.plan-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.plan-card p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.plan-card h4 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.plan-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.plan-card .price span {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-left: 0.5rem;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.plan-card ul li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.plan-card ul li::before {
+  content: '✔';
+  color: #6c63ff;
+  margin-right: 0.5rem;
+}
+
+.plan-card button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.plan-card.professional {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.plan-card.professional .price span,
+.plan-card.professional ul li::before {
+  color: #fff;
+}
+
+.plan-card.professional button {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .pricing-plan .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .pricing-plan .description {
+      text-align: center;
+      max-width: 100%;
+  }
+
+  .plan-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .plan-card {
+      width: 90%;
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-plan {
+      padding: 2rem 1rem;
+  }
+
+  .pricing-plan h2 {
+      font-size: 1.5rem;
+  }
+
+  .pricing-plan h3 {
+      font-size: 1rem;
+  }
+
+  .plan-card {
+      padding: 1.5rem;
+  }
+
+  .plan-card h4 {
+      font-size: 1rem;
+  }
+
+  .plan-card .price {
+      font-size: 1.5rem;
+  }
+
+  .plan-card p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-plan {
+      padding: 1rem;
+  }
+
+  .pricing-plan h2 {
+      font-size: 1.25rem;
+  }
+
+  .pricing-plan h3 {
+      font-size: 0.9rem;
+  }
+
+  .plan-card {
+      padding: 1rem;
+  }
+
+  .plan-card h4 {
+      font-size: 0.9rem;
+  }
+
+  .plan-card .price {
+      font-size: 1.25rem;
+  }
+
+  .plan-card p {
+      font-size: 0.8rem;
+  }
+}

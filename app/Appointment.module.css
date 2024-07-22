@@ -1,0 +1,111 @@
+/* styles/Appointment.module.css */
+
+/* Appointment Section */
+.appointment {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    border: 1px solid #ddd; /* Border for the box effect */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 700px;
+    margin: -50px auto 20px; /* Center the box and overlap above hero */
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure it appears above hero */
+    display: flex; /* Added to enable justify-content */
+    justify-content: center; /* Center the content horizontally */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.appointment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Small gap between form elements */
+    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 10px; /* Small space between labels */
+}
+
+.input-container:last-child {
+    margin-right: 0; /* Remove margin for the last element */
+}
+
+.input-container label {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px; /* Space before the button */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointment {
+        padding: 15px; /* Reduce padding for smaller screens */
+        max-width: 90%; /* Allow more flexibility in width */
+    }
+
+    .appointment form {
+        gap: 5px; /* Reduce gap between form elements */
+    }
+
+    .input-container {
+        width: 100%; /* Full width for form elements */
+        margin-bottom: 10px; /* Space between form elements */
+    }
+
+    .input-container label {
+        width: 100%; /* Full width for labels */
+        padding: 8px; /* Reduce padding */
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .submit-button {
+        width: 100%; /* Full width for the button */
+        margin: 10px 0 0 0; /* Margin above the button */
+        padding: 8px; /* Reduce padding */
+        font-size: 14px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .appointment {
+        padding: 10px; /* Further reduce padding for mobile screens */
+        max-width: 100%; /* Allow full width */
+    }
+
+    .input-container label {
+        padding: 6px; /* Further reduce padding */
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .submit-button {
+        padding: 6px; /* Further reduce padding */
+        font-size: 12px; /* Reduce font size */
+    }
+}

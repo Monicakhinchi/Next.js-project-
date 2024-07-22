@@ -1,0 +1,19 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Add the custom CSS you provided here */
+.bg-dark-purple {
+    background-color: #2a1a3d;
+  }
+  
+  .icofont-search-1:before {
+    content: "\f002";
+  }
+  
+  /* Add more styles as needed */
+  

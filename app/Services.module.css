@@ -1,0 +1,140 @@
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background: #f9f9f9; /* Optional: Add a background color for better visibility */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width for better control */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content horizontally */
+    width: 100%;
+    max-width: 1200px; /* Match the max-width of the container */
+    margin-bottom: 30px;
+    padding: 0 20px; /* Optional: Add some padding to prevent content from touching edges */
+}
+
+.services-text {
+    display: flex;
+    justify-content: space-between; /* Space out h2 and p */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 1200px; /* Match the max-width of the container and cards */
+    margin-bottom: 30px;
+}
+
+.services-text h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: left; /* Align h2 to the left */
+    flex: 1; /* Allow h2 to take up available space */
+    padding-right: 20px; /* Optional: Add some space between h2 and p */
+}
+
+.services-text p {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: right; /* Align p to the right */
+    flex: 1; /* Allow p to take up available space */
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the cards horizontally */
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for the cards */
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Adjust width of the cards */
+    box-sizing: border-box;
+    text-align: center; /* Center text inside cards */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0 0 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #4b59f7;
+    font-weight: bold;
+}
+
+.appointment-button {
+    background: #4b59f7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .services-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services-text h2, .services-text p {
+        font-size: 1.5em; /* Adjust font size for medium screens */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .card {
+        width: calc(50% - 20px); /* Adjust card width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-text h2, .services-text p {
+        font-size: 1.25em; /* Adjust font size for small screens */
+    }
+
+    .card {
+        width: calc(100% - 20px); /* Adjust card width for mobile screens */
+    }
+
+    .appointment-button {
+        padding: 8px 16px; /* Adjust button padding for mobile screens */
+        font-size: 0.9em; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-text h2, .services-text p {
+        font-size: 1em; /* Further adjust font size for very small screens */
+    }
+
+    .appointment-button {
+        padding: 6px 12px; /* Further adjust button padding */
+        font-size: 0.8em; /* Further adjust button font size */
+    }
+}
