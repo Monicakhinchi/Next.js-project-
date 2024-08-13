@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './Hero.module.css'; // Import the CSS module
 
 const Hero: React.FC = () => {
@@ -6,7 +7,7 @@ const Hero: React.FC = () => {
     <section className={styles.hero}>
       <div className={`container ${styles['hero-content']}`}>
         <div className={styles['hero-text']}>
-          <h1>Take The World's Best Quality Treatment</h1>
+          <h1>Take The World&apos;s Best Quality Treatment</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis
             tempus orci ut lacinia. Sed tempor hendrerit fermentum.
@@ -31,9 +32,11 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className={styles['hero-image']}>
-          <img
+          <Image
             src="https://images.pexels.com/photos/5996762/pexels-photo-5996762.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-5996762.jpg&fm=jpg&_gl=1*1pjeyoi*_ga*NDAzNzYwODIzLjE3MTgyOTQ5NjA.*_ga_8JE65Q40S6*MTcyMDI2NzcxNS4yLjEuMTcyMDI2ODA5Ni4wLjAuMA.."
             alt="Hero Image"
+            width={500} // Replace with actual width of your image
+            height={300} // Replace with actual height of your image
           />
         </div>
       </div>
